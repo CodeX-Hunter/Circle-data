@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $nickname = $_POST['nickname'];
     
     $url = 'https://circle.robi.com.bd/mylife/appapi/appcall.php?op=getUserInfobyNickname&nickname=' . urlencode($nickname);
